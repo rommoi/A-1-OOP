@@ -43,6 +43,28 @@ namespace Advanced_Lesson_1_OOP
     public class Car : Transport
     {
         public float Engine { get; set; }
+        public double EnginePower { get; set; }
+
+        public static bool operator <(Car car1, Car car2)
+        {
+            if (car1.EnginePower < car2.EnginePower) return true;
+            return false;
+        }
+        public static bool operator >(Car car1, Car car2)
+        {
+            if (car1.EnginePower > car2.EnginePower) return true;
+            return false;
+        }
+        public static bool operator ==(Car car1, Car car2)
+        {
+            if (car1.EnginePower == car2.EnginePower) return true;
+            return false;
+        }
+        public static bool operator !=(Car car1, Car car2)
+        {
+            if (car1.EnginePower != car2.EnginePower) return true;
+            return false;
+        }
     }
 
     public class FuelCar : Car
@@ -50,6 +72,10 @@ namespace Advanced_Lesson_1_OOP
         public int Tank { get; set; }
         public float Fuel { get; set; }
         public float FuelUsage { get; set; }
+
+        
+
+        
 
         public override void Move(float km)
         {

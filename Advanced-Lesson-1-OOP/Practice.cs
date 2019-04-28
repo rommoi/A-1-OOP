@@ -31,6 +31,17 @@ namespace Advanced_Lesson_1_OOP
         /// </summary>
         public static void A_L1_P6_OperatorsOverloading()
         {
+            Car car1 = new Car() { EnginePower = 100 };
+            Car car2 = new Car() { EnginePower = 100.1 };
+            Car car3 = new FuelCar() { EnginePower = 200 };
+            Car car4 = new ElectroCar() { EnginePower = 200 };
+            Console.WriteLine($"car1 engine power {car1.EnginePower}. car2 engine power {car2.EnginePower}. car3 engine power {car3.EnginePower}. car4 engine power {car4.EnginePower}.");
+
+            Console.WriteLine($"Car1 > car2 : {car1 > car2}, car1 < car2 : {car1 < car2}, car1 == car2 : {car1 == car2}, car1 != car2 {car1 != car2}");
+
+            Console.WriteLine($"Car1 > car4 : {car1 > car4}, car1 < car4 : {car1 < car4}, car1 == car4 : {car1 == car4}, car1 != car4 {car1 != car4}");
+
+            Console.WriteLine($"Car3 > car4 : {car3 > car4}, car3 < car4 : {car3 < car4}, car3 == car4 : {car3 == car4}, car3 != car4 {car3 != car4}");
         }
 
         /// <summary>
