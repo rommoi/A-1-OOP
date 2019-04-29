@@ -53,9 +53,16 @@
     <Compile Include="Shapes\CreateShapeArray.cs" />
     <Compile Include="Shapes\Square.cs" />
     <Compile Include="Shapes\Triangle.cs" />
+    <Compile Include="Shop\CostFilter.cs" />
+    <Compile Include="Shop\Customer.cs" />
+    <Compile Include="Shop\HDDStorage.cs" />
+    <Compile Include="Shop\IProductStorage.cs" />
+    <Compile Include="Shop\Shop.cs" />
+    <Compile Include="Shop\SimpleProduct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
